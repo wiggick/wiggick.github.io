@@ -12,7 +12,9 @@
 	});
 
 	  function showPopUp(){
-		$( "#dialog" ).dialog({width:500, height:300});
+	  	 $( ".current" ).val(0);
+	  	 $('.progressbar').progressbar('option', 'value', 0);
+		$( "#dialog" ).dialog({width:475, height:275});
 		
 		currentValue = 0;
 		$( ".progressbar" ).data('current',0);
