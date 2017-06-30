@@ -12,14 +12,10 @@
 	});
 
 	  function showPopUp(){
-	  	 $( ".current" ).val(0);
-	  	 $( ".progressbar" ).addClass('hidden');
-	  	 $( ".progressbar" ).progressbar( "destroy" );
-
-		$( "#dialog" ).dialog({width:475, height:275});
+		$( "#dialog" ).dialog({width:500, height:300});
 		
 		currentValue = 0;
-		
+		$( ".progressbar" ).data('current',0);
 		document.bar = $( ".progressbar" ).progressbar({
 		    value: currentValue	  
 		    }).children('.ui-progressbar-value')
